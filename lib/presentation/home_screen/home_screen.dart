@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_fun/app_data/app_data.dart';
-import 'package:flutter_fun/presentation/streem_controller_sink.dart';
+import 'package:flutter_fun/presentation/stream_controller_sink.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -28,9 +28,9 @@ class HomeScreen extends StatelessWidget {
             child: Text('${data['buttonText']}'),
             onPressed: () {
               if (index == 0) {
-                Navigator.of(context).push<StreemControllerSink>(
+                Navigator.of(context).push<StreamControllerSink>(
                   MaterialPageRoute(
-                    builder: (_) => const StreemControllerSink(title: '🤣🤣'),
+                    builder: (_) => const StreamControllerSink(title: '🤣🤣'),
                   ),
                 );
               }

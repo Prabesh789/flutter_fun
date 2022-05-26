@@ -2,15 +2,15 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-class StreemControllerSink extends StatefulWidget {
-  const StreemControllerSink({Key? key, this.title = ''}) : super(key: key);
+class StreamControllerSink extends StatefulWidget {
+  const StreamControllerSink({Key? key, this.title = ''}) : super(key: key);
   final String title;
 
   @override
-  State<StreemControllerSink> createState() => _StreemControllerSinkState();
+  State<StreamControllerSink> createState() => _StreemControllerSinkState();
 }
 
-class _StreemControllerSinkState extends State<StreemControllerSink> {
+class _StreemControllerSinkState extends State<StreamControllerSink> {
   final controller = StreamController<String>();
 
   @override
